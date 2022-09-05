@@ -1,20 +1,12 @@
-import Head from "next/head";
 import React from "react";
-import Header from "../header/Header";
+import {Header} from "../header/Header";
+import { CustomHead } from "./CustomHead";
 
-const MainHead = () => {
-  return (
-    <Head>
-      <title>elPoetaDev</title>
-      <meta name="description" content="Leonardo Tosetto" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-  );
-};
+
 export const Layout = (props: { children: any }) => {
   return (
     <>
-      <MainHead />
+      <CustomHead  title="elPoetaDev" />
       <Header />
       {props.children}
     </>
