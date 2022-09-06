@@ -12,8 +12,8 @@ export const Brand = () => {
     <div>
       <Link href='/'>
         <a className='flex items-center justify-center'>
-          <Logo fill={colorTheme === 'dark' ? '#0ea5e9' : '#0ea5e9'} classNames="md:w-24 md:h-24 w-14 h-14" strokeWidth={0.80277747}  />
-          <h1 className='md:text-3xl md:px-4 text-xl px-2'>elPoetaDev</h1>
+          <Logo fill={colorTheme === 'dark' ? '#0ea5e9' : '#0ea5e9'} classNames="w-16 h-16 md:w-24 md:h-24" strokeWidth={0.80277747}  />
+          <h1 className='text-2xl px-4 md:text-4xl md:px-6'>elPoetaDev</h1>
         </a>
       </Link>
     </div>
