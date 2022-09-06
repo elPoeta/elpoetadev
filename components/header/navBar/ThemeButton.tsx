@@ -1,9 +1,9 @@
 import React from "react";
-import { themeActions } from "../../context/theme/state";
-import { useTheme } from "../../context/theme/useTheme";
-import { useDarkMode } from "../../hooks/useDarkMode";
+import { themeActions } from "../../../context/theme/state";
+import { useTheme } from "../../../context/theme/useTheme";
+import { useDarkMode } from "../../../hooks/useDarkMode";
 
-const ThemeButton = () => {
+const ThemeButton = ({classNames}:{classNames:string}) => {
   const {
     state: { colorTheme },
     dispatch
@@ -25,7 +25,7 @@ const ThemeButton = () => {
                  strokeWidth="2"
                  strokeLinecap="round"
                  strokeLinejoin="round"
-                 className="w-6 h-6 cursor-pointer"
+                 className={classNames}
                  onClick={() => toggleThemeMode('light')}
                >
                  <path
@@ -38,7 +38,7 @@ const ThemeButton = () => {
                  ></path>
                </svg>      
       ) : (
-        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 cursor-pointer" onClick={() => toggleThemeMode('dark')}>
+        <svg viewBox="0 0 24 24" fill="none" className={classNames} onClick={() => toggleThemeMode('dark')}>
         <path
           fillRule="evenodd"
           clipRule="evenodd"
