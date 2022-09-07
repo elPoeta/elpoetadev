@@ -6,6 +6,10 @@ import { MenuItem } from "./MenuItem";
 export const MenuButton = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  const handleToggleLinkClicked = () => {
+    setToggleMenu(false);
+  } 
+
   return (
     <div className="lg:hidden">
       {!toggleMenu && (
@@ -24,7 +28,7 @@ export const MenuButton = () => {
               />
               <ThemeButton classNames='w-8 h-8 fill-white dark:fill-[#0ea5e9]' />
             </li>
-            <MenuItem classNames="text-xl py-5 px-2 font-bold" />
+            <MenuItem classNames="text-xl py-5 px-2 font-bold" handleToggleLinkClicked={handleToggleLinkClicked} />
           </ul>
        </div>
       )}
