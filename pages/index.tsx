@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
+import { Hero } from '../components/home/Hero'
 
 const Home: NextPage = () => {
   return (
     <div className=''>
-      <main className=''>
-        <h2>El Poeta Dev</h2>
+      <main className='container overflow-x-hidden'>
+        <Hero />
       </main>
     </div>
   )

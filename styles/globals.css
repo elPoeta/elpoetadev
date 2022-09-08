@@ -11,18 +11,12 @@
   body {
     @apply dark:bg-slate-900 bg-white dark:text-gray-200 text-slate-800;
   }
-}
-
-.text-gradient {
-  background-color: #fff;
-  background-image: radial-gradient(
-      at 4% 36%,
-      hsla(0, 0%, 100%, 1) 0,
-      transparent 53%
-    ),
-    radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  .text-gradient-dark {
+    @apply bg-gradient-to-r from-white  to-[#0ea5e9] bg-clip-text text-transparent;
+  }
+  .text-gradient-light {
+    @apply bg-gradient-to-r from-slate-900  to-[#0ea5e9] bg-clip-text text-transparent;
+  }
 }
 
 .menu-glassmorphism {
