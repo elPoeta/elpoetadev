@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, MouseEvent } from "react";
 
 const items = [
   { id: "menu-item-home", title: "Home", path: '/' },
@@ -15,7 +15,8 @@ export const MenuItem = ({ classNames, handleToggleLinkClicked }:MenuItemType ) 
     <>
       {items.map((item) => (
         <li key={item.id} className={classNames} onClick={() => handleToggleLinkClicked ? handleToggleLinkClicked() : false }>
-          <Link href={item.path}><a>
+          <Link href={item.path}>
+          <a>
             {item.title}
           </a>
           </Link>
