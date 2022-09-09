@@ -9,8 +9,8 @@ export const Hero = () => {
           <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gradient-light dark:text-gradient-dark">elPoeta Tech Dev</h2>
           <p className="mb-8 leading-relaxed">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-[#0ea5e9] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-            <button className="ml-4 inline-flex text-slate-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+            <button className="inline-flex text-white bg-slate-800 dark:bg-[#0ea5e9] border-0 py-2 px-6 focus:outline-none hover:bg-slate-700 dark:hover:bg-sky-600 rounded text-lg">Button</button>
+          
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
