@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { Logo } from '../header/Logo'
 
@@ -7,84 +8,49 @@ export const Footer = () => {
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-slate-900 dark:text-gray-200">
-       <Logo fill='#0ea5e9' classNames="w-16 h-16 md:w-24 md:h-24" strokeWidth={0.80277747}  /> 
+            <Logo fill='#0ea5e9' classNames="w-16 h-16 md:w-24 md:h-24" strokeWidth={0.80277747}  /> 
             <span className="ml-3 text-xl">elPoetaDev</span>
           </a>
           <p className="mt-2 text-sm  text-slate-800 dark:text-gray-400">Air plant banjo lyft occupy retro adaptogen indego</p>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-slate-900 dark:text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <h2 className="title-font font-medium text-slate-900 dark:text-gray-200 tracking-widest text-sm mb-3">Web site</h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">First Link</a>
+                <Link href="/">
+                  <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Home</a>
+                </Link>
               </li>
               <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Second Link</a>
+                <Link href="/projects">
+                  <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Projects</a>
+                </Link>
               </li>
               <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Third Link</a>
+                <Link href="/blog">
+                  <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Blog</a>
+                </Link>
               </li>
               <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Fourth Link</a>
+                <Link href="/about">
+                  <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">About</a>
+                </Link>
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-slate-900 dark:text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-slate-900 dark:text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-slate-900 dark:text-gray-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-slate-900 dark:text-gray-200 hover:text-slate-700 dark:hover:text-white">Fourth Link</a>
-              </li>
-            </nav>
+          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center inset-0 text-gray-400 relative">
+            <div className="lg:w-[100%] md:w-1/2 w-full px-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13138.566325268608!2d-58.38310044999999!3d-34.5879346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1662723058191!5m2!1sen!2sar" width="100%" height="100%" style={{border:0, filter: 'grayscale(1) contrast(1.2) opacity(0.16)' }}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <Link href="/contact">
+                <a className="text-white bg-[#0ea5e9] border-0 py-2 px-6 focus:outline-none hover:bg-sky-600  rounded text-lg absolute top-[50%] left-[55%] translate-x-[-55%] translate-y-[-50%]">Contact</a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
       <div className="bg-gray-100 dark:bg-slate-800 bg-opacity-75">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <div className="container mx-auto py-4 px-5 flex flex-col sm:flex-row">
           <p className="text-slate-900 dark:text-gray-200 text-sm text-center sm:text-left">© {new Date().getFullYear()} elPoetaDev —
             <a href="https://github.com/elPoeta" rel="noopener noreferrer" className="text-slate-800 dark:text-gray-400 ml-1" target="_blank">@elPoeta</a>
           </p>
